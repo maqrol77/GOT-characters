@@ -1,0 +1,136 @@
+.character-list {
+    margin-top: 100px;
+    font-weight: bolder;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    justify-items: center;
+    color: #f7ba2b;
+    font-size: 15px;
+    text-align: center;
+}
+
+.character-item {
+    cursor: pointer;
+}
+
+.imgBx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+.character-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container h1 {
+    padding-top: 30px;
+    color: #f7ba2b;
+    text-align: center;
+    font-size: 85px;
+}
+
+body {
+    background-image: url('./Assets/GOT.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 350px;
+    background: #fff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.card:hover {
+    width: 600px;
+}
+
+.card .imgBx {
+    position: relative;
+    min-width: 300px;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.tag {
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    color: #636262;
+    font-size: 10px;
+    z-index: 2;
+}
+
+.card .imgBx img {
+    max-width: 250px;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover .imgBx img {
+    transform: translate(-70%);
+}
+
+.card .details {
+    position: absolute;
+    left: 0;
+    min-width: 300px;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 20px;
+    flex-direction: column;
+    z-index: 3;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover .details {
+    left: 300px;
+}
+
+.card .details h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+
+.card .details h4 {
+    color: #fff;
+    font-weight: 600;
+    font-weight: 0.9em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1em;
+}
+
+.message {
+    color: #f7ba2b;
+}
